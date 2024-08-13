@@ -1,0 +1,95 @@
+body{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+}
+.grid_tbilisi{
+    width: 400px;
+    height: 250px;
+    background-image: url(./images/tbilisi.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+.grid_hong{
+    width: 400px;
+    height: 250px;
+    background-image: url(./images/istockphoto-629604122-612x612.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.grid_tokyo{
+    width: 400px;
+    height: 250px;
+    background-image: url(./images/gettyimages-1663763125.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+.grid_batumi{
+    width: 400px;
+    height: 250px;
+    background-image: url(./images/istockphoto-483488048-612x612.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+.grid_Cairo{
+    width: 400px;
+    height: 250px;
+    background-image: url(./images/istockphoto-1174818077-612x612.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+.grid_Dubai{
+    width: 400px;
+    height: 250px;
+    background-image: url(./images/Dubai_Skylines_at_night_\(Pexels_3787839\).jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    flex-direction: column;
+}
