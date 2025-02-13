@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ქულის სისტემა</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>მოგესალმებით!</h1>
+        <div id="nameForm">
+            <label for="username">შეიყვანეთ თქვენი სახელი:</label>
+            <input type="text" id="username" placeholder="სახელი">
+            <button id="submitName">შესვლა</button>
+        </div>
+        
+        <div id="mainPage" style="display:none;">
+            <h2>გამარჯობა, <span id="userNameDisplay"></span>!</h2>
+            <label for="colorPicker">აირჩიეთ ფონების ფერი:</label>
+            <input type="color" id="colorPicker">
+            
+            <h3>თქვენი ქულა: <span id="score">0</span></h3>
+            
+            <div>
+                <label for="numberInput">გამოიცანი რიცხვი: <span id="targetNumber">-</span></label>
+                <input type="number" id="numberInput" placeholder="შეიყვანეთ რიცხვი">
+                <button id="checkNumber">განხილვა</button>
+            </div>
+
+            <div id="progress">
+                <p>გამოცნობის სირთულე: <span id="difficulty">1-2</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

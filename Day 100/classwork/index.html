@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+</head>
+<body>
+  <h1>Product Details</h1>
+  
+  <div id="product-details">
+    <p>Loading product...</p>
+  </div>
+
+  <script>
+    fetch('https://fakestoreapi.com/products/1')
+      .then(res => res.json())  // Convert the response to JSON
+      .then(json => {
+        // Get the product details
+        const product = json;
+
+        // Create HTML content for the product
+        const productHTML = `
+          <h2>${product.title}</h2>
+          <img src="${product.image}" alt="${product.title}" style="width: 200px; height: auto;">
+          <p><strong>Price:</strong> $${product.price}</p>
+          <p><strong>Description:</strong> ${product.description}</p>
+          <p><strong>Category:</strong> ${product.category}</p>
+          <p><strong>Rating:</strong> ${product.rating.rate} (from ${product.rating.count} reviews)</p>
+        `;
+
+        // Update the page with the product details
+        document.getElementById('product-details').innerHTML = productHTML;
+      })
+      .catch(error => {
+        console.error("Error fetching product data:", error);
+        document.getElementById('product-details').innerHTML = "Sorry, something went wrong.";
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db; /* ფერი */
+  }
+  .rectangle {
+    width: 200px;
+    height: 100px;
+    background-color: #e74c3c; /* ფერი */
+  }
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* რადიუსის გამოყენება გარდაქმნის ოთხკუთხედს წრეს */
+    background-color: #2ecc71;
+  }
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; /* მარცხნიდან */
+    border-right: 50px solid transparent; /* მარჯვნიდან */
+    border-bottom: 100px solid #f39c12; /* ქვედა საზღვარი - ფერი */
+  }
+  .parallelogram {
+    width: 100px;
+    height: 60px;
+    background-color: #9b59b6;
+    transform: skew(20deg);
+  }
+  .inverted-trapezoid {
+    width: 200px;
+    height: 100px;
+    background-color: #e67e22;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  }
+  .star {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #f39c12;
+    position: relative;
+    top: -50px;
+  }
+  
+  .star:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #f39c12;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+  }
+  .umbrella {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #3498db;
+  }
+  
+  .umbrella:after {
+    content: '';
+    width: 60px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+  }
+  .star {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+            
